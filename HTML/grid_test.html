@@ -6,13 +6,25 @@
 		<style>
 			#grid{
 				border: 5px solid orange;
+				display:grid;
+				grid-template-columns: 150px 1fr;
 			}
+			#grid2{
+                                border: 5px solid pink;
+                                display:grid;
+                                grid-template-columns: 1fr 1fr;
+                        }
+			#grid3{
+                                border: 5px solid purple;
+                                display:grid;
+                                grid-template-columns: 2fr 1fr;
+                        }
 			div{
 				border: 5px solid blue;
 			}
 			span{
 				border:5px solid green;
-			}i
+			}
 		</style>
 	</head>
 	<body>
@@ -20,6 +32,16 @@
 			<div>div tag is block element, used for designing blocks</div>
 		
 			<span>span tag is in-line element, used for designing blocks</span>
-		</div>
+		</div><br>
+		<div id="grid2">
+                        <div>1fr - grid-template-columns</div>
+
+                        <div>1fr</div>
+		</div><br>
+		<div id="grid3">
+                        <div>2fr - grid-template-columns</div>
+
+                        <div>1fr</div>
+                </div>
 	</body>
 </html>
