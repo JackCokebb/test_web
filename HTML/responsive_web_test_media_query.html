@@ -1,0 +1,96 @@
+<!doctype html>
+<head>
+        <title> Jee's first web </title>
+        <meta charset="utf-8">
+<style>
+a {
+        color:blue;
+        /*text-decoration: none;*/
+}
+h1 {
+        font-size:45px;
+        text-align: center;
+}
+.lang {
+        color:green;
+}
+#better{
+        text-decoration: underline;
+}
+#twolist{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+}
+#twolist ol{
+        font-size:20px;
+
+}
+#responsive{
+	border: 10px solid green;
+	font-size: 60px;
+}
+</style>
+</head>
+<body>
+        <h1>Hello World!</h1>
+        This is my <u>first</u> web.<br> I hope you enjoy!<br><br>
+        <img src="janosch-diggelmann-Q4U62z3JSOM-unsplash.jpg" width = "20%">
+        <br><br>
+        <div id="twolist">
+                <ol style="border-right:3px solid black;">
+                        <li>
+                                <a href="https://www.google.com/search?q=%EC%A7%80%EC%A4%80%ED%98%84&oq=%EC%A7%80%EC%A4%80%ED%98%84&aqs=chrome..69i57j69i61l3.2645j0j15&sourceid=chrome&ie=UTF-8" target="_blank" title="about name">name
+                                </a>
+                        </li>
+                        <li>
+                                <a href="https://www.google.com/search?q=26&newwindow=1&sxsrf=AOaemvKjQnzN-unvuqtjj-UP-mBs7a8YvQ:1641367878138&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjMp8nqi5r1AhVG_GEKHXJiCNEQ_AUoAnoECAIQBA&biw=1920&bih=880&dpr=1" target="_blank" title="about my age"> age
+                                </a>
+                        </li>
+                        <li>
+                                <a href="my_contact.html" target="_blank" style="color:red" title="about my contact">
+                                contact
+                                </a>
+                        </li>
+                </ol>
+                <ul>
+                        <li class="lang">HTML</li>
+                        <li class="lang" id="better">C</li>
+                </ul>
+        </div>
+        <br><br>
+
+
+
+        <h3 style="background-color:DodgerBlue; display:inline; width: auto;">My favorite video</h3>
+        <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vNlaU59Vnlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        <h4>Any comment?</h4>
+        <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://my-first-web-9.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+	<div id="responsive">
+		responsive
+	</div>
+
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//my-first-web-9.disqus.com/count.js" async></script>
+
+        <br><br>from <strong>Jee</strong>
+</body>
