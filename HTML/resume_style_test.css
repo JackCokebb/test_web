@@ -1,0 +1,32 @@
+h2{
+                                border-bottom:1px solid gray;
+                                /*code also works*/
+                                /*border: 3px green solid;*/
+                                /*padding: 3px;/*make gap between words and borders*/
+                                /*margin: 3px; /*gap between border and another box's border*/
+                                /*width: 300px;*/
+                                margin:0 auto; /*0 for top and bottom, auto for left and right margin, auto means dividing margin of left and right into same size*/
+}
+h1{
+	/*border-bottom:1px solid gray;*/
+	font-size: 45px;
+	margin:0px;
+	/*padding: 20px;*/
+}
+h4{
+	margin:0;
+}
+
+@media(max-width:480px){
+	#career{
+	display: none;
+	}
+	#hidden_m{
+		display: inline;
+	}
+}
+@media(min-width:480px){
+	#hidden_m{
+		display: none;
+	}
+}
