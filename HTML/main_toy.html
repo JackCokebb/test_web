@@ -17,6 +17,14 @@ h1 {
 #better{
 	text-decoration: underline;
 }
+#twolist{
+	display: grid;
+	grid-template-columns: 150px 1fr;
+}
+#twolist ol{
+        font-size:20px;
+        
+}
 </style>
 </head>
 <body>
@@ -24,27 +32,32 @@ h1 {
 	This is my <u>first</u> web.<br> I hope you enjoy!<br><br>
 	<img src="janosch-diggelmann-Q4U62z3JSOM-unsplash.jpg" width = "20%">
 	<br><br>
-	<ol>
-		<li>
-			<a href="https://www.google.com/search?q=%EC%A7%80%EC%A4%80%ED%98%84&oq=%EC%A7%80%EC%A4%80%ED%98%84&aqs=chrome..69i57j69i61l3.2645j0j15&sourceid=chrome&ie=UTF-8" target="_blank" title="about name">name
-			</a>
-		</li>
-		<li>
-			<a href="https://www.google.com/search?q=26&newwindow=1&sxsrf=AOaemvKjQnzN-unvuqtjj-UP-mBs7a8YvQ:1641367878138&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjMp8nqi5r1AhVG_GEKHXJiCNEQ_AUoAnoECAIQBA&biw=1920&bih=880&dpr=1" target="_blank" title="about my age"> age
-			</a>
-		</li>
-		<li>
-			<a href="my_contact.html" target="_blank" style="color:red" title="about my contact">
+	<div id="twolist">
+		<ol style="border-right:3px solid black;">
+			<li>
+				<a href="https://www.google.com/search?q=%EC%A7%80%EC%A4%80%ED%98%84&oq=%EC%A7%80%EC%A4%80%ED%98%84&aqs=chrome..69i57j69i61l3.2645j0j15&sourceid=chrome&ie=UTF-8" target="_blank" title="about name">name
+				</a>
+			</li>
+			<li>
+				<a href="https://www.google.com/search?q=26&newwindow=1&sxsrf=AOaemvKjQnzN-unvuqtjj-UP-mBs7a8YvQ:1641367878138&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjMp8nqi5r1AhVG_GEKHXJiCNEQ_AUoAnoECAIQBA&biw=1920&bih=880&dpr=1" target="_blank" title="about my age"> age
+				</a>
+			</li>
+			<li>
+				<a href="my_contact.html" target="_blank" style="color:red" title="about my contact">
 				contact
-			</a>
-		</li>
-	</ol>
-	<ul>
-		<li class="lang">HTML</li>
-		<li class="lang" id="better">C</li>
-	</ul>
+				</a>
+			</li>
+		</ol>
+		<ul>
+			<li class="lang">HTML</li>
+			<li class="lang" id="better">C</li>
+		</ul>
+	</div>
 	<br><br>
-	<h3 style="background-color:DodgerBlue;">My favorite video</h3>
+	
+
+
+	<h3 style="background-color:DodgerBlue; display:inline; width: auto;">My favorite video</h3>
 	<p>
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/vNlaU59Vnlk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 	<h4>Any comment?</h4>
