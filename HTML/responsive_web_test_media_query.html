@@ -2,34 +2,41 @@
 <head>
         <title> Jee's first web </title>
         <meta charset="utf-8">
-<style>
-a {
-        color:blue;
-        /*text-decoration: none;*/
-}
-h1 {
-        font-size:45px;
-        text-align: center;
-}
-.lang {
-        color:green;
-}
-#better{
-        text-decoration: underline;
-}
-#twolist{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-}
-#twolist ol{
-        font-size:20px;
+	<style>
+	a {
+	        color:blue;
+        	/*text-decoration: none;*/
+	}
+	h1 {
+	        font-size:45px;
+        	text-align: center;
+	}
+	.lang {
+        	color:green;
+	}
+	#better{
+        	text-decoration: underline;
+	}
+	#twolist{
+        	display: grid;
+	        grid-template-columns: 150px 1fr;
+	}
+	#twolist ol{
+	        font-size:20px;
 
-}
-#responsive{
-	border: 10px solid green;
-	font-size: 60px;
-}
-</style>
+	}
+	#responsive{
+		border: 10px solid green;
+		font-size: 60px;
+	}
+	/*if screen width > 800px*/
+	@media(min-width:800px){
+		#responsive{
+			display:none;
+		}
+	}
+
+	</style>
 </head>
 <body>
         <h1>Hello World!</h1>
