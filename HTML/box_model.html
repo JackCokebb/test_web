@@ -23,24 +23,42 @@
 			h4{
 				margin:0;
 			}
+
+			@media(max-width:480px){
+				#career{
+					display: none;
+				}
+				#hidden_m{
+					display: inline;
+				}
+
+			}
+			@media(min-width:480px){
+                                #hidden_m{
+                                        display: none;
+                                }
+
+                        }
 		</style>
 	</head>
 	<body>	
 		<h1 style="text-align: center;">JUNEHYON JEE</h1>
 		<h2 style="text-align: center">reo2726@gmail.com</h2>
-		<p>
-		<h4>EDUCATION</h4>
+		<div id="hidden_m"> my career is bigger than this. </div>
+		<div id="career">
+			<p>
+			<h4>EDUCATION</h4>
 		
-			<strong>Sungkyunkwn University</strong>, Suwon, Korea<br>
-			Major GPA 4.0
-		</p>
-		<p>
-			<h4>SKILLS</h4>
-			Programing language: C, C++, Java, Python, JS, Scala<br>
-			Operaing systems: Windows, Linux, Unix<br>
-			Language: Korean, English
-		</p>
-
+				<strong>Sungkyunkwn University</strong>, Suwon, Korea<br>
+				Major GPA 4.0
+			</p>
+			<p>
+				<h4>SKILLS</h4>
+				Programing language: C, C++, Java, Python, JS, Scala<br>
+				Operaing systems: Windows, Linux, Unix<br>
+				Language: Korean, English
+			</p>
+		</div>
 
 	</body>
 </html>
