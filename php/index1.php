@@ -7,10 +7,17 @@
 </head>
 <body>
     <h1><a href="index1.php">WEB</a></h1>
+    
     <ol>
-        <li><a href = "index1.php?id=HTML">HTML</a></li>
-        <li><a href = "index1.php?id=CSS">CSS</a></li>
-        <li><a href = "index1.php?id=JavaScript">Javascript</a></li>
+        <?php
+        $dir = "./data";
+        $data_dir = scandir($dir);
+        foreach($data_dir as &$title){
+            if($title != "." && $title !=".."){
+                echo "<li><a href=\"/index1.php?id=$title\">$title</a></li>\n";
+            }
+        }
+        ?>
     </ol>
     <h2>
         <?php
