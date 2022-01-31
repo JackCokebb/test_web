@@ -1,20 +1,5 @@
 <?php
-function print_title(){
-    if(isset($_GET['id'])){
-    echo $_GET['id'];}
-    else{
-        echo "Welcome!";
-    }
-}
-
-function print_description(){
-    if(isset($_GET['id'])){
-        echo file_get_contents("data/".$_GET['id']);
-    }
-    else{
-        echo "i am php";
-    }
-}
+require("lib/print.php");
 ?>
 
 <!DOCTYPE html>
@@ -31,13 +16,7 @@ function print_description(){
     
     <ol>
         <?php
-        $dir = "./data";
-        $data_dir = scandir($dir);
-        foreach($data_dir as &$title){
-            if($title != "." && $title !=".."){
-                echo "<li><a href=\"/index1.php?id=$title\">$title</a></li>\n";
-            }
-        }
+print_list();
         ?>
     </ol>
     <a href="create.php">create</a>

@@ -1,20 +1,5 @@
 <?php
-function print_title(){
-    if(isset($_GET['id'])){
-    echo $_GET['id'];}
-    else{
-        echo "Welcome!";
-    }
-}
-
-function print_description(){
-    if(isset($_GET['id'])){
-        echo file_get_contents("data/".$_GET['id']);
-    }
-    else{
-        echo "i am php";
-    }
-}
+require("lib/print.php");
 ?>
 
 <!DOCTYPE html>
@@ -30,21 +15,17 @@ function print_description(){
     <h1><a href="index1.php">WEB</a></h1>
     
     <ol>
-        <?php
-        $dir = "./data";
-        $data_dir = scandir($dir);
-        foreach($data_dir as &$title){
-            if($title != "." && $title !=".."){
-                echo "<li><a href=\"/index1.php?id=$title\">$title</a></li>\n";
-            }
-        }
-        ?>
+        <?php print_list(); ?>
     </ol>
     <a href="create.php">create</a>
     <?php if(isset($_GET['id'])){
      ?>
      <!--<?php echo $_GET['id'] ?> == <?=$_GET['id']?>-->
     <a href="update.php?id=<?=$_GET['id'] ?>">update</a>
+    <form action="delete_process.php" method = "post">
+        <input type="hidden" name="id" value="<?=$_GET['id'] ?>">
+        <input type="submit" value="delete">
+    </form>
     <?php } ?>
     <h2>
         <?php
