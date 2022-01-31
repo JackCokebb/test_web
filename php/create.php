@@ -43,17 +43,14 @@ function print_description(){
     <a href="create.php">create</a>
     <?php if(isset($_GET['id'])){
      ?>
-     <!--<?php echo $_GET['id'] ?> == <?=$_GET['id']?>-->
-    <a href="update.php?id=<?=$_GET['id'] ?>">update</a>
+    <a href="update.php?id=<?php echo $_GET['id'] ?>">update</a>
     <?php } ?>
-    <h2>
-        <?php
-        print_title();
-        ?>
-    </h2>
-    <?php
-    print_description();
-    ?>
+    <form action="create_process.php" method ="post">
+        <p><input type="text" name="title" placeholder = "title"></p>
+        <p><textarea name="description" placeholder="description"></textarea></p>
+        <p><input type="submit"></p>
+        
+    </form>
 
 </body>
 </html>
