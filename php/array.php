@@ -10,7 +10,11 @@
     <h1>array</h1>
     <?php
     echo "<h2>\$num = array(\"1\",2,3,\"4\",\"5\");</h2>";
+    
     $num = array("1",2,3,"4","5");
+    array_push($num, 6,7); //push new element in the back 
+    print_r($num);
+    echo "<br>";
     $i = 0 ;
     while($i<count($num)){
         echo var_dump($num[$i])."<br>";
