@@ -1,16 +1,19 @@
 <?php
-var_dump($_POST);
+$conn = mysqli_connect('localhost', 'jee', '1234', 'php_mysql_db');
+$filtered_arr = array(
+    'title'=>mysqli_real_escape_string($conn,$_POST['title']),
+    'description'=>mysqli_real_escape_string($conn,$_POST['description'])
+);
+
 $sql="
     INSERT INTO topic
         (title, description, created)
         VALUES(
-            '{$_POST['title']}',
-            '{$_POST['description']}',
+            '{$filtered_arr['title']}',
+            '{$filtered_arr['description']}',
             NOW()
         )
 ";
-
-$conn = mysqli_connect('localhost', 'jee', '1234', 'php_mysql_db');
 
 $res = mysqli_query($conn, $sql);
 if(!$res){
